@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <title>Mapa do Crime</title>
+      <link rel="stylesheet" type="text/css" href="css/global.css">
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+   </head>
+   <body>
+   	  <header>
+   	     <div id="brasao">
+            <img id="Brasao" src="img/Brasao-Betim.png" alt="Brasao">
+         </div>
+         <div id="login">
+	        <form>
+	           <label for="nLogin">Login: </label>
+	           <input type="text" id="cLogin" name="nLogin" placeholder="login">
+	           <br>
+	           <br>
+	           <label for="nSenha">Senha:</label>
+	           <input type="password" id="cSenha" name="nSenha" placeholder="senha">
+	        </form>
+         </div>
+         <div id="titulo">
+            <h1>Mapa do Crime de Betim</h1>
+         </div>
+   	  </header>
+   	  <section>
+   	     <div id="regional">
+   	        <form>
+   	           <span id="tituloRegional">Selecione a Regional</span>
+   	           <br>
+                 <input onclick="mudaMapa('img/mapa-betim-alterosa.png')" type="radio" name="nRegional" id="cRegional" value="Alterosas">
+                 <label for="nRegional" id="reg">Alterosas</label>
+                 <input onclick="mudaMapa('img/mapa-betim-citrolandia.png')" type="radio" name="nRegional" id="cRegional" value="Citrolândia">               
+                 <label for="nRegional" id="reg">Citrolândia</label>
+                 <input onclick="mudaMapa('img/mapa-betim-imbirucu.png')" type="radio" name="nRegional" id="cRegional" value="Imbiruçu">
+                 <label for="nRegional" id="reg">Imbiruçu</label>
+                 <input onclick="mudaMapa('img/mapa-betim-ptb.png')" type="radio" name="nRegional" id="cRegional" value="PTB">
+                 <label for="nRegional" id="reg">PTB</label>
+                 <input onclick="mudaMapa('img/mapa-betim-norte.png')" type="radio" name="nRegional" id="cRegional" value="Norte">
+                 <label for="nRegional" id="reg">Norte</label>
+                 <input onclick="mudaMapa('img/mapa-betim-teresopolis.png')" type="radio" name="nRegional" id="cRegional" value="Teresópolis">
+                 <label for="nRegional" id="reg">Teresópolis</label>
+                 <input onclick="mudaMapa('img/mapa-betim-vianopolis.png')" type="radio" name="nRegional" id="cRegional" value="Vianópolis">
+                 <label for="nRegional" id="reg">Vianópolis</label>
+                 <input onclick="mudaMapa('img/mapa-betim-centro.png')" type="radio" name="nRegional" id="cRegional" value="Centro">
+                 <label for="nRegional" id="reg">Centro</label>
+                 <br>
+                 <input onclick="mudaMapa('img/mapa-betim.png')" type="radio" name="nRegional" id="cRegional" value="betim" checked>
+                 <label for="nRegional" id="reg">Betim</label>
+   	        </form>
+   	     </div>
+           <div id="mapa">
+              <img id="imgMapa" src="img/mapa-betim.png">
+           </div>
+   	  </section>
+   	  <footer>
+   	  </footer>
+        <script language="javascript" src="js/index.js"></script>
+   </body>
+</html>
